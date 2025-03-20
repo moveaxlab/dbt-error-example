@@ -1,4 +1,8 @@
 # DEMO PROJECT FOR DBT TEMP TABLES CLEANUP ERROR
+## Issue description
+when using dbt to synch and incremental model if an error arises during the data synchronization the temporary tables with  
+pattern `O$PT_<MODEL_NAME><TS>` are not dropped.
+
 ## System Dependencies
 - sqlplus
 - docker
@@ -7,7 +11,7 @@ if you already have a python dev environment you can skip [Install Mise](#instal
 if you need to set up the python environment rapidly you can leverage the `.mise.toml` as we do
 ### Install Mise
 in order to install mise follow [these](https://mise.jdx.dev/getting-started.html) instructions
-then you can just cd into the repo folder and:
+then you can just *cd* into the repo folder and:
 ```shell
 mise trust .mise.toml
 mise install
