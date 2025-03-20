@@ -9,6 +9,13 @@ _.python.venv = { path = ".venv", create = true }
 ORA_PYTHON_DRIVER_TYPE = "thin"
 DBT_PROJECT_DIR = "project/"
 DBT_PROFILES_DIR = "profiles/"
+ORACLE_DB_USER = "admin"
+ORACLE_DB_PASSWORD = "TVDGXvpzQat8"
+ORACLE_DB_HOST = "localhost"
+ORACLE_DB_PORT = 1521
+ORACLE_DB_SCHEMA = "admin"
+ORACLE_DB_SERVICE = "MYATP"
+
 
 [settings]
 python_compile = true

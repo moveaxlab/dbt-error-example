@@ -1,0 +1,13 @@
+local:
+  target: local
+  outputs:
+    local:
+      type: oracle
+      user: "{{ env_var('ORACLE_DB_USER') }}"
+      password: "{{ env_var('ORACLE_DB_PASSWORD') }}"
+      protocol: tcp
+      host: "{{ env_var('ORACLE_DB_HOST') }}"
+      port: "{{ env_var('ORACLE_DB_PORT') }}"
+      service: "{{ env_var('ORACLE_DB_SERVICE') }}"
+      schema: "{{ env_var('ORACLE_DB_SCHEMA') }}"
+      threads: 1

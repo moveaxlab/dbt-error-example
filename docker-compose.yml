@@ -1,0 +1,8 @@
+services:
+  database:
+    image: ghcr.io/oracle/adb-free:latest  # https://github.com/oracle/adb-free
+    ports:
+      - ${ORACLE_DB_PORT}:1521
+    environment:
+      ADMIN_PASSWORD: ${ORACLE_DB_PASSWORD}
+      WALLET_PASSWORD: tkmXp6Ug

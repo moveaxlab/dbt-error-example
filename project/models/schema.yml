@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: target_table
+    description: "Target table for demonstration of tmp tables bug"
+    columns:
+      - name: id
+        description: "Unique identifier"
+      - name: c2
+        description: "Non nullable field"

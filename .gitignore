@@ -163,8 +163,10 @@ cython_debug/
 
 #dbt
 dbt.log.*
-
+target/*
+!target/.gitkeep
 #JetBrains
 .idea
 
 **/.mise.local.toml
+.bin/*
