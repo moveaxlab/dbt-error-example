@@ -1,0 +1,14 @@
+[tools]
+poetry = { version = "1.7", pyproject = "{{ config_root }}/pyproject.toml" }
+python = { version = "3.10" }
+
+[env]
+MISE_POETRY_AUTO_INSTALL = "1"
+MISE_POETRY_VENV_AUTO=1
+_.python.venv = { path = ".venv", create = true }
+ORA_PYTHON_DRIVER_TYPE = "thin"
+DBT_PROJECT_DIR = "project/"
+DBT_PROFILES_DIR = "profiles/"
+
+[settings]
+python_compile = true

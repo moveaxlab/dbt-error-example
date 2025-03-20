@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dbt-error-example"
+version = "0.1.0"
+description = ""
+authors = ["Fabrizio Cavaniglia <fabrizio.cavaniglia@moveax.it>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dbt-core = "^1.8.3"
+dbt-oracle = "^1.7.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
